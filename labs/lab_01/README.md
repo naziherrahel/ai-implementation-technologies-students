@@ -27,9 +27,9 @@ Work in a team of three or four unless we have agreed on another size.
 Discuss possible directions aloud. Do not write several complete proposals. Look for a situation where:
 
 - a real person or group needs something to improve;
-- the input and useful result can be described clearly;
-- learned behaviour may help more than simple rules alone;
-- a dataset or representative sample is realistically accessible.
+- the input (what the system receives) and useful result (what it should produce) can be described clearly;
+- the system may need to learn a pattern from examples instead of relying only on fixed `if/then` rules;
+- your team can realistically access some relevant data, even if it is only a small but realistic sample at first.
 
 ## 2. Choose one direction — 20 minutes
 
@@ -54,8 +54,10 @@ In `README.md`, include:
 
 - team name;
 - team members;
-- communication route;
-- one-sentence project direction.
+- where the team will communicate, such as a Telegram group or another agreed space;
+- one-sentence project direction — who you want to help, what the system will use, and what useful change it should support.
+
+For example: “We want to help campus facilities staff use bin images to identify bins that may need collection.” This describes the project without claiming that the system already exists or naming a favourite model.
 
 Create `docs/project_brief.md` using this structure:
 
@@ -65,7 +67,7 @@ Create `docs/project_brief.md` using this structure:
 ## User and situation
 Who needs the system? What happens now, and what should become better?
 
-## System path
+## What the system should do
 - Input:
 - Useful output:
 - Action or decision after the output:
@@ -73,12 +75,12 @@ Who needs the system? What happens now, and what should become better?
 ## Why AI may help
 What pattern may need to be learned? What rules, interface, people, or review steps also belong to the system?
 
-## Data direction
-- Likely source:
+## Initial data plan
+- Where the data may come from:
 - What we can access now:
 - What still needs confirmation:
 
-## Three first risks
+## Three immediate project risks
 1.
 2.
 3.
@@ -89,7 +91,9 @@ What pattern may need to be learned? What rules, interface, people, or review st
 3.
 ```
 
-The three next actions are not three extra documents. They are small, concrete steps written inside the project brief. For example: confirm access to a representative sample, check its basic format, or make sure every team member can clone and open the repository.
+A **risk** is something uncertain that could block the project, delay it, or make its result less useful. Examples include not receiving permission to use the data, having too few useful examples, unclear labels, or choosing a direction that is too broad. Write risks that belong to your project, not general statements such as “the AI may fail.” You do not need to solve every risk today.
+
+The three next actions are small steps that help the team move forward or reduce those risks. They are written inside the project brief, not as three extra documents or repository issues. Examples include confirming access to a small realistic sample, checking its format, or making sure every team member can open the repository.
 
 ## 4. Show, revise, and commit — 15 minutes
 
@@ -99,7 +103,7 @@ Before you leave, show me the README and project brief. Be ready to explain:
 - the input, output, and next action;
 - why AI has a sensible role;
 - where the first data may come from;
-- the three most immediate project risks.
+- the three immediate project risks.
 
 If one part is unclear, make the requested revision. Then commit the Lab 01 documents to the team repository.
 
