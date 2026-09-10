@@ -40,15 +40,16 @@ Studio progress is saved only in local storage for that browser profile on that 
 Only the materials listed here are currently available:
 
 - [Lecture 01 — AI-Based Software Systems and the MLOps Lifecycle](lectures/lecture_01_ai_based_software_systems.pptx)
+- [Lab 01 — Choose a Project We Can Actually Build](labs/lab_01/README.md)
 
-AIT Studio remains available through the link above. No Lab handout is included in the current repository release.
+AIT Studio remains available through the link above. Future Lab handouts are added only when they are released.
 
 ## Start this week
 
 1. Activate your AIT Studio account.
 2. Open the Lecture 01 slides.
 3. Use AIT Studio during the lecture session when directed.
-4. Lab 01 will take place the following Friday; its handout will be added when it is released.
+4. Read the Lab 01 handout before the Lab begins. All required Lab 01 work will be completed during class.
 
 ## When Lab work begins
 
