@@ -80,20 +80,15 @@ What pattern may need to be learned? What rules, interface, people, or review st
 - What we can access now:
 - What still needs confirmation:
 
-## Three immediate project risks
-1.
-2.
-3.
-
 ## Three next actions
 1.
 2.
 3.
 ```
 
-A **risk** is something uncertain that could block the project, delay it, or make its result less useful. Examples include not receiving permission to use the data, having too few useful examples, unclear labels, or choosing a direction that is too broad. Write risks that belong to your project, not general statements such as “the AI may fail.” You do not need to solve every risk today.
+Under **What still needs confirmation**, record only open questions that matter before the team can proceed. For example: whether you can obtain suitable data, whether you are allowed to use it, or whether the project direction is small enough for this course. You do not need to answer every question today.
 
-The three next actions are small steps that help the team move forward or reduce those risks. They are written inside the project brief, not as three extra documents or repository issues. Examples include confirming access to a small realistic sample, checking its format, or making sure every team member can open the repository.
+The three next actions are small steps that help the team answer those questions and move forward. They are written inside the project brief, not as three extra documents or repository issues. Examples include confirming access to a small realistic sample, checking its format, or making sure every team member can open the repository.
 
 ## 4. Show, revise, and commit — 15 minutes
 
@@ -103,7 +98,7 @@ Before you leave, show me the README and project brief. Be ready to explain:
 - the input, output, and next action;
 - why AI has a sensible role;
 - where the first data may come from;
-- the three immediate project risks.
+- what still needs confirmation and what the team will do next.
 
 If one part is unclear, make the requested revision. Then commit the Lab 01 documents to the team repository.
 
@@ -111,7 +106,7 @@ If one part is unclear, make the requested revision. Then commit the Lab 01 docu
 
 - another person can understand the project direction from `README.md`;
 - `docs/project_brief.md` answers the prompts above without pretending that uncertain facts are confirmed;
-- the three risks and three next actions are specific to your project;
+- the open questions and three next actions are specific to your project;
 - every team member can open the repository.
 
 One clear, feasible direction is enough. Do not train, evaluate, deploy, or monitor a model in Lab 01.
