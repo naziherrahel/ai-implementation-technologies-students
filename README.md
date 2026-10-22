@@ -42,15 +42,16 @@ Only the materials listed here are currently available:
 - [Lecture 01 — AI-Based Software Systems and the MLOps Lifecycle](lectures/lecture_01_ai_based_software_systems.pptx)
 - [Lab 01 — Choose a Project We Can Actually Build](labs/lab_01/README.md)
 - [Lab 02 — Build a Repeatable Baseline](labs/lab_02/README.md)
+- [Lab 03 — Decide What Counts as Acceptable](labs/lab_03/README.md)
 
 AIT Studio remains available through the link above. Future Lab handouts are added only when they are released.
 
 ## Start with the current Lab
 
 1. Keep using the team repository you created in Lab 01.
-2. Open the [Lab 02 handout](labs/lab_02/README.md) when the Lab begins.
+2. Open the [Lab 03 handout](labs/lab_03/README.md) when the Lab begins.
 3. Complete the required work during class; there is no pre-class submission.
-4. Before leaving, show the repeatable run and saved result, then commit the Lab 02 work to the team repository.
+4. Before leaving, show the required behavior, acceptance check, and matching failure case, then commit the Lab 03 work to the team repository.
 
 ## When Lab work begins
 
