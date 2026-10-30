@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" version="24.7.17">
+  <diagram id="lab04-inference-path" name="Inference path">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="meta" value="Trigger: REPLACE&#xa;Intended placement: REPLACE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#2e7d32;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="360" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="boundary" value="INFERENCE BOUNDARY" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=#f5f5f5;fillOpacity=35;strokeColor=#455a64;fontStyle=1;verticalAlign=top;spacingTop=8;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="590" y="120" width="370" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="source" value="REAL INPUT SOURCE&#xa;REPLACE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="165" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="check" value="FIRST INPUT CHECK&#xa;REPLACE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e1;strokeColor=#f9a825;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="165" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="prepare" value="PREPROCESSING&#xa;REPLACE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede7f6;strokeColor=#5e35b1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="165" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="model" value="LAB 02 BASELINE / MODEL&#xa;REPLACE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e0f2f1;strokeColor=#00796b;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="165" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="rule" value="DECISION RULE&#xa;REPLACE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="165" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="user" value="USER / DOWNSTREAM ACTION&#xa;REPLACE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f5e9;strokeColor=#2e7d32;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="165" width="180" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="unavailable" value="INFERENCE UNAVAILABLE&#xa;Safe action: REPLACE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffebee;strokeColor=#c62828;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="330" width="200" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="evidence" value="EVIDENCE RECORD&#xa;request_id · input_ref · status/result · versions · latency · action · simulated" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e3f2fd;strokeColor=#1565c0;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="330" width="300" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" value="input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="source" target="check">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e2" value="accepted" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="check" target="prepare">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e3" value="prepared input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="prepare" target="model">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4" value="result" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="model" target="rule">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e5" value="response + action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="rule" target="user">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e6" value="controlled failure" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#c62828;fontColor=#c62828;endArrow=block;endFill=1;" edge="1" parent="1" source="model" target="unavailable">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7" value="safe response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#c62828;fontColor=#c62828;endArrow=block;endFill=1;" edge="1" parent="1" source="unavailable" target="user">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e8" value="request_id + versions + result/action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#1565c0;fontColor=#1565c0;endArrow=block;endFill=1;" edge="1" parent="1" source="rule" target="evidence">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9" value="simulated=true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;strokeColor=#1565c0;fontColor=#1565c0;endArrow=block;endFill=1;" edge="1" parent="1" source="unavailable" target="evidence">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
