@@ -16,12 +16,23 @@ The JSONL trace is the evidence for the Lab. It should explain which rules ran, 
 
 ## Try the FireWatch starter
 
-Open a terminal in the `starter` directory and run the same commands shown in the lecture:
+Open a terminal in the `starter` directory.
+
+On macOS or Linux, run:
 
 ```bash
 python3 src/inference_demo.py
 python3 -m unittest tests/test_input_validation.py
 ```
+
+On Windows PowerShell, run:
+
+```powershell
+py src/inference_demo.py
+py -m unittest tests/test_input_validation.py
+```
+
+If Windows does not recognize `py`, use `python` instead.
 
 The first command should print one `pass`, one `error`, and one `warning`, then create `reports/validation_demo.jsonl`. The test command should run three tests successfully. The passing case calls `project_predict_stub()`; it does not run a trained model.
 
@@ -111,11 +122,7 @@ Run one case for each status:
 2. an invalid input that produces an error;
 3. a readable but unsupported input that produces a warning.
 
-Use `src/inference_demo.py` to generate `reports/validation_demo.jsonl`. The supplied `project_predict_stub()` only proves whether the prediction function was called; it is not a model inference result. Then run:
-
-```bash
-python3 -m unittest tests/test_input_validation.py
-```
+Use `src/inference_demo.py` to generate `reports/validation_demo.jsonl`. The supplied `project_predict_stub()` only proves whether the prediction function was called; it is not a model inference result. Then run the test command for your system: `python3 -m unittest tests/test_input_validation.py` on macOS or Linux, or `py -m unittest tests/test_input_validation.py` on Windows PowerShell.
 
 The tests should prove that an error overrides a warning, a warning does not call prediction automatically, and a pass does call prediction.
 

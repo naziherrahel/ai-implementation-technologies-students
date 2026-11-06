@@ -75,11 +75,21 @@ A `review` status means prediction ran but a person should check the result. An 
 
 ## 4. Generate and inspect the evidence — 10 minutes
 
-Add the demo run instruction to the project `README.md`. For the supplied Python starter:
+Add the demo run instruction to the project `README.md`.
+
+On macOS or Linux, run:
 
 ```bash
-python src/inference_demo.py --input-ref path/to/one/example
+python3 src/inference_demo.py --input-ref path/to/one/example
 ```
+
+On Windows PowerShell, run:
+
+```powershell
+py src/inference_demo.py --input-ref path/to/one/example
+```
+
+If Windows does not recognize `py`, use `python` instead.
 
 The run must create `reports/inference_demo.jsonl` with two lines: one normal attempt and one simulated unavailable attempt. A notebook must run from top to bottom and create the same file.
 
