@@ -1,0 +1,11 @@
+{
+  "contract_version": "input-v2",
+  "model_package": "firewatch-smoke-v4",
+  "transform_id": "sha256:5639361c0370",
+  "allowed_formats": ["jpg", "png"],
+  "allowed_sources": ["camera-a", "camera-b"],
+  "minimum_width": 320,
+  "minimum_height": 240,
+  "warning_action": "route_for_review",
+  "error_action": "reject_input"
+}

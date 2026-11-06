@@ -44,15 +44,16 @@ Only the materials listed here are currently available:
 - [Lab 02 — Build a Repeatable Baseline](labs/lab_02/README.md)
 - [Lab 03 — Decide What Counts as Acceptable](labs/lab_03/README.md)
 - [Lab 04 — Make One Inference Path Run](labs/lab_04/README.md)
+- [Lab 05 — Executable Input Assurance](labs/lab_05/README.md)
 
 AIT Studio remains available through the link above. Future Lab handouts are added only when they are released.
 
 ## Start with the current Lab
 
 1. Keep using the team repository you created in Lab 01.
-2. Open the [Lab 04 handout](labs/lab_04/README.md) when the Lab begins.
+2. Open the [Lab 05 handout](labs/lab_05/README.md) when the Lab begins.
 3. Complete the required work during class; there is no pre-class submission.
-4. Before leaving, show the runnable inference path, its generated evidence, and the matching diagram, then commit the Lab 04 work to the team repository.
+4. Before leaving, show the pass, warning, and error routes, the generated validation trace, and the passing tests, then commit the Lab 05 work to the team repository.
 
 ## When Lab work begins
 
