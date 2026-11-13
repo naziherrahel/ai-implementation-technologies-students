@@ -1,0 +1,10 @@
+{
+  "contract_version": "image-upload-v1",
+  "allowed_content_types": ["image/jpeg", "image/png"],
+  "allowed_decoded_formats": ["JPEG", "PNG"],
+  "allowed_decoded_modes": ["RGB", "RGBA"],
+  "maximum_upload_bytes": 10000000,
+  "minimum_width": 64,
+  "minimum_height": 64,
+  "error_action": "reject_input"
+}

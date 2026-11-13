@@ -7,5 +7,6 @@ Only released Lab handouts are available here.
 - [Lab 03 — Decide What Counts as Acceptable](lab_03/README.md)
 - [Lab 04 — Make One Inference Path Run](lab_04/README.md)
 - [Lab 05 — Executable Input Assurance](lab_05/README.md)
+- [Lab 06 — Put a Real AI Service on a Cloud VM](lab_06/README.md)
 
 Complete the work in your team's own repository. Do not add project work to this course-materials repository.
